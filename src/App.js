@@ -23,8 +23,7 @@ function App() {
       overlaps(
         event.target.getBoundingClientRect(),
         wormholeARef.current.getBoundingClientRect()
-      ) &&
-      isInSpaceA
+      )
     ) {
       setIsInSpaceA(false);
     }
@@ -34,8 +33,7 @@ function App() {
       overlaps(
         event.target.getBoundingClientRect(),
         wormholeBRef.current.getBoundingClientRect()
-      ) &&
-      !isInSpaceA
+      )
     ) {
       setIsInSpaceA(true);
     }
@@ -50,17 +48,14 @@ function App() {
       <div className="wormhole-a" ref={wormholeARef} />
       {!isInSpaceA &&
         ReactDOM.createPortal(
-          <Draggable
-            axis="both"
-            bounds="parent"
-            onStop={checkInsideWorkmholeB}
-          >
+          <Draggable axis="both" bounds="parent" onStop={checkInsideWorkmholeB}>
             <Starship />
           </Draggable>,
           wormholeB
         )}
       {ReactDOM.createPortal(
-        <div className="wormhole-b" ref={wormholeBRef}></div>, wormholeB
+        <div className="wormhole-b" ref={wormholeBRef}></div>,
+        wormholeB
       )}
     </div>
   );
