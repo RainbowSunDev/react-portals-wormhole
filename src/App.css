@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+.App, .wormhole-b-container {
+  background-color: white;
+  position: relative;
+  width: 100vw;
+  height: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wormhole-a {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.starship {
+  width: 80px;
+  height: 80px;
+  font-size: 60px;
+  float: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wormhole-b {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background-color: blue;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
