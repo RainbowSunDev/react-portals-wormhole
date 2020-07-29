@@ -14,6 +14,10 @@ Use `useRef` hook to keep references to DOM elements.
 
 Use the library (**React Draggable**)[https://www.npmjs.com/package/react-draggable] to move the spaceship around the screen.
 
+## Run the project
+
+Use `yarn start` to run the app in the development mode and open http://localhost:3000 to view it in the browser.
+
 ## To read more
 
 - [React Portals documentation](https://reactjs.org/docs/portals.html)
