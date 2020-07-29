@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import ReactDOM from "react-dom";
-import "./App.css";
 import Draggable from "react-draggable";
+import "./App.css";
 import Starship from "./Starship";
 
 const wormholeB = document.querySelector(".wormhole-b-container");
@@ -18,7 +18,7 @@ function App() {
   const [isInSpaceA, setIsInSpaceA] = useState(true);
   const wormholeARef = useRef();
   const wormholeBRef = useRef();
-  const checkInsideWorkmholeA = event => {
+  const checkInsideWorkmholeA = (event) => {
     if (
       overlaps(
         event.target.getBoundingClientRect(),
@@ -28,7 +28,7 @@ function App() {
       setIsInSpaceA(false);
     }
   };
-  const checkInsideWorkmholeB = event => {
+  const checkInsideWorkmholeB = (event) => {
     if (
       overlaps(
         event.target.getBoundingClientRect(),
